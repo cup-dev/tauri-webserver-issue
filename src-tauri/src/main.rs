@@ -12,6 +12,9 @@ fn main() {
   .arg("../dist")
   .spawn()
   .expect("failed to execute process");
+  
+  // Wait 1s for the server to start
+  std::thread::sleep(std::time::Duration::from_secs(1));
 
   // Spawn tauri app
   let context = tauri::generate_context!();
