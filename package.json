@@ -1,0 +1,13 @@
+{
+  "name": "tauri-webserver-issue",
+  "scripts": {
+    "tauri": "export TAURI_SKIP_DEVSERVER_CHECK=true; tauri"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^1.0.1",
+    "http-server": "^14.1.1"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^1.0.0"
+  }
+}

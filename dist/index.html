@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<script>
+
+	window.onload = function () {
+		setTimeout(function () {
+			document.querySelector("#text").innerHTML = window.__TAURI__ != null ? "YES 😁" : "NO 😭"
+		},
+			1000)
+	}
+
+</script>
+
+<h1>Is
+	<pre>window.__TAURI__</pre> available: <span id="text">...</span>
+</h1>
